@@ -16,7 +16,8 @@ func main() {
 	fmt.Print("Informe a equação de segundo grau: ")
 	// fmt.Scanln(&data)
 	fmt.Println(data)
-	fmt.Println(calculaBhaskara(data))
+	x1, x2 := calculaBhaskara(data)
+	fmt.Printf("x1 = %v, x2 = %v \n", x1, x2)
 }
 
 func calculaBhaskara(data string) (x1 float64, x2 float64) {
